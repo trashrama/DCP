@@ -26,8 +26,11 @@ def tratamento():
 
 
 def main():
-    client = xmlrpc.client.ServerProxy(
-        "http://localhost:6969/", allow_none=True)
+    try:
+        client = xmlrpc.client.ServerProxy(
+            "http://localhost:6969/", allow_none=True)
+    except ConnectionRefusedError:
+        print("O servidor possivelmente está desligado!")
 
     for tupla in tratamento():
         client.envia(tupla)
