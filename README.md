@@ -1,4 +1,4 @@
-# DCP: Dados, Processos e Comunicação 
+# DCP: Dados, Comunicação e Processos 
 ## 1. DCP - Implementações de S.O
 >  Você fará uma implementação que lê valores de uma planilha e atualiza as notas num banco de dados SQL, sendo isso dividido em dois códigos / processos que se comunicam.
 
